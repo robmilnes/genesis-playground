@@ -1,0 +1,16 @@
+{
+  "name": "Genesis-Playground",
+  "version": "2.0.4",
+  "homepage": "127.0.0.1:8080",
+  "authors": [
+    "Rob Milnes <hello@robmilnes.com> (http://robmilnes.com)"
+  ],
+  "description": "Just a playground for Genesis POS functionality tests",
+  "main": "less/genesis.less",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
