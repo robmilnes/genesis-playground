@@ -1,7 +1,26 @@
 @import "../node_modules/Scaffold/src/scaffold.less";
 
-.text-center {
-    text-align: center;
+@genesisDarkGrey: #2C2742;
+@genesisMidGrey: #3A364C;
+
+* {
+    font-family: @secondary-font;
+}
+
+a, a:hover, a:visited, a:focus, a:active {
+    color: @lowes-white;
+}
+
+.text- {
+    &center {
+        text-align: center;
+    }
+    &left {
+        text-align: left;
+    }
+    &right {
+        text-align: right;
+    }
 }
 
 .primary-navigation-bar {
@@ -23,4 +42,78 @@
     display: block;
     overflow-y: scroll;
     overflow-x: hidden;
+    
+    & .screen-grid-container {
+        width: 100%;
+        max-width: 100%;
+        
+        & [class^="grid-"] {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+.genesisDarkGrey {
+    color: @genesisDarkGrey;
+    
+    &Bg { 
+        background-color: @genesisDarkGrey;
+        color: @lowes-white;
+    }
+}
+
+.genesisMidGrey {
+    color: @genesisMidGrey;
+    
+    &Bg { 
+        background-color: @genesisMidGrey;
+        color: @lowes-white;
+    }
+}
+
+.head {
+    height: 76px;
+    width: 100%;
+    display: block;
+    
+    & a {
+        font-size: 30px;
+        padding: 0 25px;
+        line-height: 76px;
+        display: inline-block;
+        
+        & span.small-font {
+            font-size: 12px;
+            font-weight: 100;
+            position: relative;
+            top: -5px;
+        }
+    }
+    
+    &.main {
+        padding: 12px 12px 0 12px;
+        height: 64px;
+    }
+}
+
+.btn {
+    
+    &.btn-primary.btn-genesis {
+        background-color: rgba(255,255,255,0.1);
+        border: 0;
+        min-height: 50px;
+        line-height: 50px;
+        padding: 0 30px;
+        font-family: @secondary-font;
+        font-size: 16px;
+        
+        &:hover,&:active {
+            background-color: rgba(255,255,255,0.2) !important;
+        }
+        
+        &.edit {
+            margin-right: 20px;
+        }
+    }
 }
