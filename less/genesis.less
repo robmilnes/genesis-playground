@@ -1,1 +1,26 @@
 @import "../node_modules/Scaffold/src/scaffold.less";
+
+.text-center {
+    text-align: center;
+}
+
+.primary-navigation-bar {
+    
+    & h1.secondary-font {
+        color: @theme-quaternary;
+        line-height: 2.3em;
+        margin: 0;
+    }
+}
+
+.genesis-screen {
+    width: 1280px;
+    height: 740px;
+    border: 50px solid @lowes-lightGrey;
+    border-radius: 25px;
+    margin: 100px auto;
+    position: relative;
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     grunt.initConfig({
         less: {
             development: {
@@ -9,14 +9,14 @@ module.exports = function(grunt) {
                     dumpLineNumbers: 'false'
                 },
                 files: {
-                    "css/genesis.css": "less/genesis.less"
+                    "public/assets/css/genesis.css": "less/genesis.less"
                 }
             }
         },
 
         watch: {
             options: {
-                livereload: false,
+                livereload: false
             },
             styles: {
                 files: ['less/**/*.less'],
